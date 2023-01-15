@@ -15,7 +15,7 @@ while (isSunk == false)
     {
     if (guess < 1 || guess > 7 || array.includes(guess))
     {
-        alert("Не вводите повтояющиеся");
+        alert("Вводите числа только из диапазона. Так же не вводите повторяющиеся");
         array.push(guess);
         console.log(array);
         console.log(guess);
@@ -54,5 +54,5 @@ while (isSunk == false)
         alert("Вводить можно только цифры");
     }     
 }
-var stats = "Вы выстрелили " + guesses + " раза, чтоб потопить корабль, " + "это значит, что Ваша меткость была равна: " + (3/guesses);
+var stats = "Вы выстрелили " + guesses + " раза, чтоб потопить корабль, " + "это значит, что Ваша меткость была равна: " + ((3/guesses)*100) + "%";
 alert(stats);
